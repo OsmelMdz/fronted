@@ -1,7 +1,87 @@
+body {
+    background-color: #f7a04a;
+    background-image: url(https://wallpaperstock.net/wallpapers/thumbs1/3640.jpg);
+}
+
 h1 {
-    color: rgb(106, 106, 211);
-    /*font-size: 100px;*/
+    color: #020300;
+    text-align: center;
 }
-h2 {
-    color: #025157;
+
+p {
+    color: #06fdabcc;
+    font-family: verdana;
+    font-size: 20px;
 }
+
+button {
+    color: #fff;
+    background-color: #025157;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border: 0;
+    border-radius: 5px;
+}
+
+.header {
+  /*margin-top: 48px;
+    margin-left: 20px;
+    margin-right: 20px;*/
+    margin:40px 20px 0 20px;
+    font-size: 0;
+    line-height: 45px;
+}
+
+li {
+   display: inline;
+   margin: 0 25px 0 25px;
+}
+
+.header > *{
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: middle;
+    height: 100px;
+    line-height: 45px;
+    font-family: sans-serif;
+}
+
+.logo{
+    width: 15%;
+}
+
+.navbar{
+    width: 70%;
+    text-align: center;
+    color: rgb(204, 248, 204);
+}
+
+.menu-item {
+    display: inline;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.actions{
+    width: 15%;
+    text-align: right;
+    font-size: 14px;
+}
+
+.actions > * {
+    margin: 0 10px 0 10px;
+  }
+  
+  .actions a {
+    color: #67b54b;
+  }
+  
+  .actions button {
+    color: white;
+    background-color: #67b54b;
+    padding: 12px 14px;
+    border: 0;
+    border-radius: 5px;
+  }
