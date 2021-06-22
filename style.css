@@ -1,6 +1,6 @@
 body {
     background-color: #f7a04a;
-    background-image: url(https://wallpaperstock.net/wallpapers/thumbs1/3640.jpg);
+    background-image: url(https://data.1freewallpapers.com/download/color-background-blue.jpg);
 }
 
 h1 {
@@ -9,7 +9,7 @@ h1 {
 }
 
 p {
-    color: #06fdabcc;
+    color: #083f2dcc;
     font-family: verdana;
     font-size: 20px;
 }
@@ -55,7 +55,7 @@ li {
 .navbar{
     width: 70%;
     text-align: center;
-    color: rgb(204, 248, 204);
+    color: rgb(3, 92, 3);
 }
 
 .menu-item {
@@ -75,7 +75,7 @@ li {
   }
   
   .actions a {
-    color: #67b54b;
+    color: #227703;
   }
   
   .actions button {
@@ -85,3 +85,58 @@ li {
     border: 0;
     border-radius: 5px;
   }
+  .publish {
+    /* container styles if any */
+  }
+  
+  .publish h3 {
+    font-family: "Alegreya", serif;
+    font-size: 40px;
+    line-height: 48px;
+    color: #025157;
+  }
+  
+  .publish > p {
+    font-size: 16px;
+    color: #343434;
+    line-height: 1.5;
+    margin-bottom: 20px;  
+  }
+  
+  .publish > form {
+    display: flex;
+  }
+  
+  .publish > form p {
+    color: #025157;
+    margin-right: 18px;
+  }
+  .promo {
+    display: flex;
+    width: 70%;
+    margin: 100px auto;
+    align-items: center;
+  }
+  .explanatory-video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .explanatory-video img {
+    width: 120px;
+    margin-top: 10px;
+  }
+  .fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #e602ad;
+  }
+  main {
+    margin-top: 285px;
+    text-align: center;
+  }
+  
+  
