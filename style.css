@@ -14,43 +14,6 @@ body {
     background-image: url(https://www.pngmagic.com/product_images/plain-soid-Light-Slate-Gray-bhackground-images.jpg);
 }
 
-nav {
-  display: block;
-}
-
-.navbar {
-  background-color: #553802;
-}
-
-.navbar {
-  font-family: "Alegreya", sans-serif;
-  position: relative;
-  color: rgb(1, 250, 208);
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  padding: .5rem 1rem;
-}
-
-.navbar-brand {
-  display: inline-block;
-  padding-top: 3125rem;
-  padding-bottom: 3125rem;
-  margin-right: 1rem;
-  font-size: 1.25rem;
-  line-height: inherit;
-  white-space: nowrap;
-}
-
-.navbar-light .nav-toggler {
-  border-color: #000000;
-}
-
-.navbar-light .nav-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(3, 81, 77)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
-
 .actions {
   text-align: right;
   font-weight: 600;
@@ -68,7 +31,10 @@ nav {
 .actions button {
   color:#f77a06;
   background-color: #063a3a;
-  padding: 12px 14px 12px 14px;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   border: 0;
   border-radius: 5px;
 }
@@ -78,7 +44,7 @@ b, strong{
 }
 
 main {
-  margin-top: 195px;
+  margin-top: 184px;
   text-align: center;
 }
 
@@ -115,7 +81,7 @@ p {
 }
 
 form {
-  height: 55px;
+  height: 50px;
 }
 
 input,
@@ -138,7 +104,7 @@ button {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   padding: 6px 20px;
-  margin-left: -10px;
+  margin-left: 10px;
 }
 
 element.sytle {
@@ -590,9 +556,9 @@ ol {
 }
 
 .header {
-    margin:40px 20px 0 20px;
+    margin:10px 20px 0 20px;
     font-size: 0;
-    line-height: 45px;
+    line-height: 10px;
 }
 
 li {
@@ -600,12 +566,23 @@ li {
    text-align: -webkit-match-parent;
 }
 
+.header {
+  padding-bottom: 184px;
+}
+
+.header p {
+  color: #46484c;
+  max-width: 680px;
+  margin: 0 auto;
+  margin-bottom: 72px;
+}
+
 .header > *{
     display: inline-block;
     font-size: 16px;
     vertical-align: middle;
     height: 100px;
-    line-height: 45px;
+    line-height: 10px;
     font-family: sans-serif;
 }
 
@@ -613,18 +590,99 @@ li {
     width: 15%;
 }
 
-.menu-item {
-    display: inline;
-    margin-right: 25px;
-    margin-left: 25px;
-    text-align: -webkit-match-parent;
+.navbar {
+  background-color: #fffbf7;
 }
 
-.fixed-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1030;
-    background-color: #fffbf7;
+
+.navbar-light .nav-item .nav-link {
+  color: #025157;
+}
+
+.navbar-light .navbar-toggler {
+  border-color: #025157;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(3, 81, 77)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+
+/** dispositivos móviles en vista viewport (vertical) */
+@media (max-width: 575px) {
+  /*.navbar, .actions {
+    display: none;
+  }*/
+
+  main {
+    margin-top: 130px;
+  }
+
+  h1 {
+    font-size: 30px;
+    color: #013b4e;
+    font-family: "Alegreya",serif;
+    margin-top: 175px;
+    margin-bottom: 24px;
+  }
+
+  .banner > img {
+    width: 100%;
+  }
+  .promo {
+    flex-direction: column;
+  }
+
+  .explanatory-video > video {
+    width: 100%;
+  }
+
+  .publish {
+    margin-top: 10px;
+  }
+
+  .publish > h3 {
+    font-size: 25px;
+    line-height: 1.2;
+  }
+
+  .publish > from {
+    flex-direction: column;
+  }
+
+  .publish > form > button {
+    width: 92%;
+  }
+
+  .publish > form > input {
+    width: 90%;
+  }
+
+  .features {
+    grid-template: repeat(4, 1fr) / 1fr;
+  }
+
+  .feature-image {
+    display: none;
+  }
+}
+
+/** dispositivos pequeños en vista landscape (horizontal) */
+@media (min-width: 576px) and (max-width: 767px) {
+  
+}
+
+/** dispositivos medianos (tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+  
+}
+
+/** dispositivos grandes (desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  
+}
+
+/** dispositivos extra grandes (monitores grandes, tvs) */
+@media (min-width: 1200px) {
+  
 }

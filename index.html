@@ -1,10 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta
+     name="viewport"
+     content="width=device-width,initial-scale=1.0,user-scalable=no"
+    />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Matcha</title>
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
+    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">-->
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    crossorigin="anonymous"
+  />
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -28,27 +40,41 @@
       <button>Entrar</button>
     </div>
   </header>
-  </section -->
-<header class="fixed-header">
+</section>-->
 <nav class="navbar navbar-expand-lg fixed-top navbar-light">
-  <a class="navbar-brad" href="#">
-    <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/footer_logo.svg" alt="Matcha">
+  <a class="navbar-brand" href="#">
+    <img
+      src="https://getmatcha.com/wp-content/themes/getmatcha/img/footer_logo.svg"
+      alt="Matcha"
+    />
   </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="menu-item">
-        <li class="menu-item">Inicio</li>
-        <li class="menu-item">Tutoriales</li>
-        <li class="menu-item">Cursos</li>
-        <li class="menu-item">Servicios</li>
-        <li class="menu-item">Contacto</li>
-      </ul>
-    </div>
-    <form class="form-inline my-2 my-lg-0 actions">
-      <a>Iniciar Sesión</a>
-      <button>Iniciar Prueba Gratuita</button>
+    <ul class="navbar-nav mx-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="./index.html">Platform</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="./princig.html">Pricing</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Customers</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Resources</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <a>Sign In</a>
+      <button>Start free trial</button>
     </form>
+  </div>
 </nav>
-</header>
     <!--Reto 1-->
 <main>
   <h1> BIENVENIDOS </h1>
@@ -63,7 +89,8 @@
   <h5>Mi etiqueta</h5>
   <h6>Mi etiqueta</h6>-->
   <!--Reto 3-->
-  <form class="signup-form">
+  <article class="publish">
+    <form class="signup-form">
       <label for="name"></label>
       <input type="text" required id="name" name="fname" placeholder="Correo Electronico">
       <input type="text" id="lastname" name="lastname" placeholder="Apellido">
@@ -71,7 +98,8 @@
       <input type="email" id="email" name="email" placeholder="Correo">
       <input type="password" id="password" name="password" placeholder="Contraseña">
       <button type="submit">Enviar</button>
-  </form> 
+    </form>
+  </article> 
   <p>
     " Empieza A Publicar Hoy Con Una "
     <strong>Prueba Gratuita De 7 Días.</strong><br>
@@ -365,5 +393,20 @@
     </article>
   </div>
 </section>
+<script
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"
+  ></script>
 </body>
 </html>
