@@ -51,4 +51,17 @@
     width: 180px;
     margin-bottom: 15px;
   }
+
+  @media (max-width: 575) {
+    .blog {
+      .row {
+        display: grid;
+        .col {
+          float: left;
+          width: 90%;
+          padding: 5% 0%;
+        }
+      }
+    }
+  }
 }
